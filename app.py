@@ -42,4 +42,6 @@ def deep(path):
     # Print prediction and confidence score
     return {"class": class_name[2:], "confidence": confidence_score}
 
-print(deep("test_image/today.png"))
+if __name__ == "__main__":
+    filename = 'today.png'
+    print(deep("./img/today.png"))
